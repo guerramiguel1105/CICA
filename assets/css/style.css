@@ -10,8 +10,9 @@
   --carbon:#2B2620;      /* texto */
   --gris:#6B6259;
   --linea:#E4D6BE;
-  --sans:'Inter',system-ui,sans-serif;
-  --cond:'Barlow Condensed',Impact,sans-serif;
+  --sans:'Archivo',system-ui,sans-serif;      /* cuerpo, menú, botones */
+  --display:'Fraunces',Georgia,serif;         /* titulares */
+  --marca:'Barlow Condensed',Impact,sans-serif; /* solo el wordmark del logo */
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -20,7 +21,7 @@ body{margin:0;font-family:var(--sans);color:var(--carbon);font-size:16px;line-he
 h1,h2,h3{margin:0;line-height:1.15}
 p{margin:0 0 1em}
 a{color:inherit;text-decoration:none}
-.btn{display:inline-flex;align-items:center;gap:8px;background:var(--verde);color:#fff;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:14px 24px;border-radius:4px;border:0;cursor:pointer;transition:.2s}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--verde);color:#fff;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:14px 24px;border:0;cursor:pointer;transition:.2s}
 .btn:hover{background:var(--verde-osc)}
 .btn.claro{background:#fff;color:var(--verde)}
 .btn.claro:hover{background:var(--verde-pale)}
@@ -28,7 +29,7 @@ a{color:inherit;text-decoration:none}
 .center{text-align:center}
 .center .eyebrow{display:flex;align-items:center;justify-content:center;gap:14px}
 .center .eyebrow:before,.center .eyebrow:after{content:"";width:34px;height:1px;background:var(--verde-cl)}
-h2.titulo{font-size:clamp(26px,3.4vw,36px);font-weight:600;letter-spacing:-.02em}
+h2.titulo{font-family:var(--display);font-size:clamp(28px,3.6vw,40px);font-weight:600;letter-spacing:-.015em}
 h2.titulo em{font-style:normal;color:var(--verde-cl)}
 section{padding:76px 0}
 
@@ -38,7 +39,7 @@ header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid 
 .logo{display:flex;align-items:center;gap:12px}
 .logo .mark{width:46px;height:46px;display:grid;place-items:center}
 .logo .mark img{width:100%;height:100%}
-.logo .txt strong{font-family:var(--cond);font-size:34px;font-weight:700;letter-spacing:.02em;color:var(--verde);display:block;line-height:.9}
+.logo .txt strong{font-family:var(--marca);font-size:34px;font-weight:700;letter-spacing:.02em;color:var(--verde);display:block;line-height:.9}
 .i-leaf{position:relative}
 /* La hoja se ancla al alto de mayúscula de Barlow Condensed (0.70em, tope a 0.40em del borde de la caja de línea) */
 .i-leaf::before{content:"";position:absolute;width:.3em;height:.34em;top:.04em;left:50%;transform:translateX(-40%) rotate(12deg);background:url(../img/leaf-dot.svg) no-repeat center/contain}
@@ -46,7 +47,7 @@ header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid 
 .menu{display:flex;gap:26px;font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:#4A544F}
 .menu a{padding:6px 0;border-bottom:2px solid transparent}
 .menu a:hover,.menu a.on{color:var(--verde);border-color:var(--verde-cl)}
-.hamb{display:none;background:none;border:1px solid var(--linea);border-radius:4px;padding:9px 10px;cursor:pointer}
+.hamb{display:none;background:none;border:1px solid var(--linea);padding:9px 10px;cursor:pointer}
 .hamb span{display:block;width:22px;height:2px;background:var(--verde);margin:4px 0;transition:.25s}
 .hamb.abierto span:nth-child(1){transform:translateY(6px) rotate(45deg)}
 .hamb.abierto span:nth-child(2){opacity:0}
@@ -74,7 +75,7 @@ header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid 
 .hero:has(.hero-foto):after{content:"";position:absolute;inset:0;
   background:linear-gradient(100deg,#fff 0%,rgba(255,255,255,.96) 34%,rgba(255,255,255,.55) 48%,rgba(255,255,255,0) 62%)}
 .hero-inner{padding:64px 0;position:relative;z-index:1}
-.hero h1{font-family:var(--cond);font-size:clamp(38px,5.6vw,62px);font-weight:700;letter-spacing:.005em;text-transform:uppercase;color:var(--verde-osc);max-width:12ch}
+.hero h1{font-family:var(--display);font-size:clamp(38px,5.4vw,60px);font-weight:700;letter-spacing:-.02em;color:var(--verde-osc);max-width:14ch}
 .hero h1 span{color:var(--verde-cl)}
 .hero p.tagline{margin-top:14px;font-style:italic;font-weight:600;color:var(--madera-osc);font-size:16px}
 .hero p.lead{margin-top:10px;max-width:38ch;color:var(--gris);font-size:17px}
@@ -86,7 +87,7 @@ header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid 
 /* FRANJA SECTORES */
 .franja{background:var(--verde-osc);color:#fff}
 .franja .wrap{display:flex;align-items:center;gap:30px;padding:26px 0;flex-wrap:wrap}
-.franja h3{font-family:var(--cond);font-size:22px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;max-width:190px;padding-right:30px;border-right:1px solid rgba(255,255,255,.25)}
+.franja h3{font-family:var(--display);font-size:21px;font-weight:600;letter-spacing:-.01em;max-width:190px;padding-right:30px;border-right:1px solid rgba(255,255,255,.25)}
 .franja ul{display:flex;gap:28px;flex-wrap:wrap;list-style:none;margin:0;padding:0;flex:1}
 .franja li{text-align:center;font-size:10px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:#D6E4DA;line-height:1.4}
 .franja svg{width:30px;height:30px;stroke:#fff;fill:none;stroke-width:1.4;display:block;margin:0 auto 8px}
@@ -94,8 +95,14 @@ header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid 
 
 /* NOSOTROS */
 .dos{display:grid;grid-template-columns:.85fr 1.1fr .8fr;gap:44px;align-items:center}
-.imgbox{aspect-ratio:4/3;border-radius:6px;background:linear-gradient(140deg,#7FA98A,#2F5A3C 60%,#1D3A28);position:relative;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.12)}
-.imgbox img{width:100%;height:100%;object-fit:cover;display:block}
+.imgbox{aspect-ratio:4/3;background:linear-gradient(140deg,#7FA98A,#2F5A3C 60%,#1D3A28);position:relative;overflow:hidden}
+.imgbox img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .45s ease}
+.imgbox img.on{opacity:1}
+.flechas{position:absolute;right:0;bottom:0;display:flex}
+.flechas button{width:42px;height:42px;border:0;background:rgba(18,63,37,.88);cursor:pointer;display:grid;place-items:center;transition:background .2s}
+.flechas button:hover{background:var(--verde-cl)}
+.flechas button+button{border-left:1px solid rgba(255,255,255,.2)}
+.flechas svg{width:17px;height:17px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .imgbox:not(:has(img)):after{content:"Imagen: inspección / lista de chequeo";position:absolute;left:14px;bottom:12px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.7)}
 .valores{list-style:none;margin:0;padding:0}
 .valores li{display:flex;align-items:center;gap:11px;padding:7px 0;font-size:15px;color:#3B443F}
@@ -106,28 +113,28 @@ header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid 
 /* SERVICIOS */
 .servicios{background:var(--marfil)}
 .grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;margin-top:40px}
-.tarjeta{background:#fff;border:1px solid var(--linea);border-bottom:3px solid var(--verde);border-radius:6px;padding:34px 24px;text-align:center;transition:.25s}
-.tarjeta:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(27,94,55,.12)}
-.tarjeta svg{width:42px;height:42px;stroke:var(--verde);fill:none;stroke-width:1.5;margin-bottom:18px}
-.tarjeta h3{font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--verde);margin-bottom:12px}
+.tarjeta{border-top:2px solid var(--carbon);padding:26px 0 0;transition:border-color .25s}
+.tarjeta:hover{border-top-color:var(--verde-cl)}
+.tarjeta svg{width:34px;height:34px;stroke:var(--verde);fill:none;stroke-width:1.5;margin-bottom:16px}
+.tarjeta h3{font-family:var(--display);font-size:19px;font-weight:600;letter-spacing:-.01em;color:var(--verde-osc);margin-bottom:10px}
 .tarjeta p{font-size:14.5px;color:var(--gris);margin:0}
 
 /* METODOLOGIA */
 .pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:40px}
-.paso{border:1px solid var(--linea);border-radius:6px;padding:24px 20px;position:relative;background:#fff}
+.paso{border-top:1px solid var(--linea);padding:22px 0 0;position:relative}
 .paso .top{display:flex;align-items:center;gap:12px;margin-bottom:14px}
 .paso .cir{width:46px;height:46px;border-radius:50%;background:var(--verde);display:grid;place-items:center;flex:0 0 46px}
 .paso .cir svg{width:21px;height:21px;stroke:#fff;fill:none;stroke-width:1.6}
-.paso b{font-family:var(--cond);font-size:30px;font-weight:700;color:var(--carbon);line-height:1;display:block}
+.paso b{font-family:var(--display);font-size:30px;font-weight:700;color:var(--carbon);line-height:1;display:block}
 .paso small{font-size:9.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--verde-cl)}
 .paso p{font-size:14px;color:var(--gris);margin:0}
 
 /* CTA */
 .cta{background:linear-gradient(90deg,var(--verde-osc) 0%,var(--verde-osc) 55%,#2C7145 100%);color:#fff;padding:54px 0}
 .cta .wrap{display:flex;align-items:center;gap:34px;flex-wrap:wrap;justify-content:space-between}
-.cta h2{font-family:var(--cond);font-size:32px;font-weight:700;text-transform:uppercase;letter-spacing:.02em}
+.cta h2{font-family:var(--display);font-size:clamp(26px,3vw,34px);font-weight:600;letter-spacing:-.015em}
 .cta p{margin:8px 0 0;color:#CFE2D6;font-size:15px}
-.cta .escudo{width:66px;height:66px;border-radius:8px;background:rgba(255,255,255,.1);display:grid;place-items:center}
+.cta .escudo{width:66px;height:66px;background:rgba(255,255,255,.1);display:grid;place-items:center}
 .cta .escudo svg{width:34px;height:34px;stroke:#fff;fill:none;stroke-width:1.4}
 .tel{display:flex;align-items:center;gap:9px;font-size:15px;margin-top:12px;color:#fff}
 .tel svg{width:16px;height:16px;stroke:var(--verde-cl);fill:none;stroke-width:1.8}
@@ -141,8 +148,7 @@ footer li{padding:5px 0}
 footer li a:hover{color:var(--verde-cl)}
 footer .arr{color:var(--verde-cl);margin-right:8px}
 .flogo{display:flex;align-items:center;gap:12px;margin-bottom:16px}
-.flogo .mark{border-color:#fff}
-.flogo strong{color:#fff;font-family:var(--cond);font-size:32px;line-height:.9;display:block}
+.flogo strong{color:#fff;font-family:var(--marca);font-size:32px;line-height:.9;display:block}
 .flogo div>span{font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:#9AA5A0;display:block;margin-top:3px}
 .redes{display:flex;gap:10px}
 .redes a{width:36px;height:36px;border-radius:50%;background:var(--verde);display:grid;place-items:center}

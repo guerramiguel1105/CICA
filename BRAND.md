@@ -29,8 +29,15 @@ Paleta actualizada (la vigente — reemplaza cualquier versión anterior). Vive 
 
 Cargadas desde Google Fonts (`<link>` en el `<head>` de `index.html`):
 
-- **Barlow Condensed** (600/700) — titulares grandes, wordmark "CICA", números de la metodología. Variable CSS: `--cond`.
-- **Inter** (400/500/600/700) — todo el cuerpo de texto, menú, botones. Variable CSS: `--sans`.
+- **Fraunces** (600/700) — titulares. Serif editorial y cálida, elegida para que el sitio no se lea como plantilla genérica y para acompañar los tonos madera. Variable CSS: `--display`.
+- **Archivo** (400/500/600/700) — cuerpo de texto, menú, botones, etiquetas. Variable CSS: `--sans`.
+- **Barlow Condensed** (700) — **solo** el wordmark "CICA" del header y el footer, porque replica la letra del logo real. No usarla para nada más. Variable CSS: `--marca`.
+
+Los titulares van en caja normal (no en mayúsculas): la serif pierde carácter en mayúsculas y es justo lo que hacía ver el diseño genérico.
+
+## Bordes y superficies
+
+Sin esquinas redondeadas: todo va a 90°. Las tarjetas de servicios y los pasos de la metodología no van encajonados en un recuadro, sino con un filete fino arriba y el texto alineado a la izquierda. Los únicos círculos son los de los íconos (badges, pasos, redes), que sí vienen de la identidad. Nada de sombras ni de efectos de "levantar" la tarjeta al pasar el mouse.
 
 ## Stack / herramientas por defecto
 

@@ -4,7 +4,7 @@ desktop.ini
 node_modules/
 .vscode/
 
-# Fotos de prueba — quitar estas dos líneas cuando lleguen las fotos reales,
+# Fotos de prueba — quitar estas líneas cuando lleguen las fotos reales,
 # para que sí se suban al repo.
 assets/img/hero.jpg
-assets/img/nosotros.jpg
+assets/img/nosotros-*.jpg
