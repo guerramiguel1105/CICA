@@ -5,7 +5,8 @@ Referencia rápida de identidad visual, para que cualquier sesión futura (o cua
 ## Logo
 
 - **Marca completa** (símbolo + "CICA" + "Control Integral de Calidad Alimentaria"): usar en el header, footer, propuestas e informes.
-- **Símbolo suelto** (`assets/img/logo-mark.svg`): checklist con dos chulos + una hoja verde, dentro de un anillo verde abierto. Se usa como avatar y sello (favicon, redes sociales, marcas de agua).
+- **Símbolo suelto** (`assets/img/logo-mark.svg`): documento con tres chulos y esquina doblada, dentro de un anillo verde cerrado, con una hoja que se monta sobre el borde inferior derecho. Se usa como avatar y sello (favicon, redes sociales, marcas de agua).
+- **Hoja sobre la "I"**: el wordmark lleva una hoja pequeña encima de la I (`assets/img/leaf-dot.svg`, clase `.i-leaf` en el CSS). No es una imagen: es texto real con la hoja posicionada por CSS, para que el logo siga siendo seleccionable y nítido en cualquier tamaño. La posición está calculada contra el alto de mayúscula de Barlow Condensed (0.70em), así que escala sola si cambias el `font-size`.
 - `assets/img/logo-mark.svg` es una **recreación vectorial** hecha a partir de las referencias de marca compartidas (mockups del diseñador), no el archivo original. Si en algún momento llega el .ai/.svg/.png definitivo del diseñador, reemplazar ese archivo manteniendo el mismo nombre — se actualiza automáticamente en todo el sitio (header, footer, favicon).
 - `assets/img/favicon.svg` es una versión simplificada del símbolo, optimizada para verse bien a 16–32px (pestaña del navegador).
 - Tagline oficial: **"Calidad que se ve, confianza que se siente."** — ya está en el hero del sitio (`index.html`).
