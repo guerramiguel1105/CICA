@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto — CICA</title>
+<meta name="description" content="Solicite un diagnóstico para su operación. Escríbanos o llámenos y coordinamos una primera visita.">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Barlow+Condensed:wght@700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/layout.js" defer></script>
+</head>
+<body>
+
+<div id="cabecera"></div>
+
+<div class="encabezado">
+  <div class="wrap">
+    <p class="eyebrow">Contacto</p>
+    <h1>Solicite su diagnóstico</h1>
+    <p>Cuéntenos qué tipo de operación maneja y coordinamos una primera visita sin costo para entender su punto de partida.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap contacto-grid">
+    <div>
+      <h2 class="titulo">Hablemos de su <em>operación</em></h2>
+      <p style="color:var(--gris);margin-top:18px">Escríbanos por correo o llámenos directamente. Respondemos dentro del siguiente día hábil.</p>
+      <!-- Los datos salen de assets/js/layout.js — cambiar allá, no aquí. -->
+      <ul class="datos">
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+          <span><b>Correo</b><a data-contacto="correo" href="#"></a></span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 005 5L15 13l5 2v4a1 1 0 01-1 1A16 16 0 014 5a1 1 0 011-1z"/></svg>
+          <span><b>Teléfono</b><a data-contacto="telefono" href="#"></a></span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span><b>Ubicación</b><span data-contacto="ciudad"></span></span>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="titulo">Qué incluye la <em>primera visita</em></h2>
+      <ul class="valores" style="margin-top:22px">
+        <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>Recorrido por la operación</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>Revisión de la documentación actual</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>Identificación de riesgos críticos</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>Propuesta con alcance y tiempos</li>
+      </ul>
+      <p style="margin-top:26px"><a class="btn" data-contacto-href="correo" href="#">Escribirnos ahora →</a></p>
+    </div>
+  </div>
+</section>
+
+<div id="pie"></div>
+</body>
+</html>

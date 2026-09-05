@@ -4,15 +4,27 @@ Sitio de una sola página para CICA (Control Integral de Calidad Alimentaria). H
 
 ## Estructura
 
+Una página por sección del menú:
+
 ```
-index.html              ← toda la página (secciones: hero, sectores, nosotros, servicios, metodología, contacto, footer)
+index.html          ← Inicio (portada, sectores, resumen de servicios)
+nosotros.html       ← Nosotros (galería de fotos + valores)
+servicios.html      ← Servicios
+metodologia.html    ← Metodología (los 5 pasos)
+sectores.html       ← Sectores
+contacto.html       ← Contacto
 assets/
-  css/style.css          ← todos los estilos y la paleta de colores (variables al inicio del archivo)
-  js/main.js             ← el menú hamburguesa (móvil)
-  img/
-    favicon.svg          ← ícono de pestaña del navegador (ya listo)
-    (aquí van hero.jpg, nosotros.jpg, logo.svg cuando los tengas — ver abajo)
+  css/style.css      ← todos los estilos y la paleta (variables al inicio del archivo)
+  js/layout.js       ← menú y pie de página compartidos + DATOS DE CONTACTO
+  js/galeria.js      ← las flechas de la galería de Nosotros
+  img/               ← logo, favicon y fotos
 ```
+
+### El menú y el pie están en un solo lugar
+
+`assets/js/layout.js` genera el menú y el pie en todas las páginas, así que **el teléfono, el correo, la ciudad y los links de redes se cambian una sola vez ahí** (arriba del archivo, en `CONTACTO`) y se actualizan en las 6 páginas. Si se copiaran en cada archivo HTML, cambiar el teléfono sería editar 6 archivos.
+
+Para agregar una página nueva: copia cualquier `.html` existente, cámbiale el contenido, y agrégala a la lista `PAGINAS` en `layout.js` para que aparezca en el menú.
 
 ## Ver el sitio localmente
 
@@ -26,21 +38,24 @@ npx serve .
 
 y abre la URL que te muestre en la terminal.
 
-## Qué falta por completar (marcado con `TODO` en el código)
+## Qué falta por completar
 
-Busca `TODO` en `index.html` — cada uno indica exactamente qué reemplazar:
+1. **Datos de contacto y redes**: correo, teléfono, ciudad y los links de Facebook / Instagram /
+   LinkedIn están en `assets/js/layout.js`, arriba del todo, en el objeto `CONTACTO`. Ese es el
+   único lugar donde hay que cambiarlos.
+2. **Foto de la portada**: reemplaza `assets/img/hero.jpg` por la foto real. Si borras la línea del
+   `<img class="hero-foto">` en `index.html`, la portada vuelve al degradado verde/madera de marca.
+3. **Fotos de la galería de Nosotros** (proporción 4:3): reemplaza `assets/img/nosotros-1.jpg`,
+   `-2` y `-3`. Para agregar o quitar fotos, agrega o borra un `<img>` en `nosotros.html`; la
+   primera de la lista lleva `class="on"`.
 
-1. **Foto del hero** (fondo grande de la portada). Ya está conectada: reemplaza el archivo
-   `assets/img/hero.jpg` por la foto real y listo. Si borras la línea del `<img class="hero-foto">`
-   en `index.html`, el hero vuelve solo al degradado verde/madera de marca.
-2. **Foto de "Nosotros"** (recuadro junto a la lista de valores, proporción 4:3). Igual: reemplaza
-   `assets/img/nosotros.jpg` por la foto real.
-
-   > Ojo: hoy esos dos archivos son **fotos de prueba** y están en `.gitignore` para no subirlas.
-   > Cuando pongas las reales, borra esas dos líneas del `.gitignore` para que sí se versionen.
-3. **Logo definitivo**: ya está integrado (`assets/img/logo-mark.svg`), pero es una recreación vectorial hecha a partir de las referencias de marca — ver [BRAND.md](BRAND.md#logo) si llega el archivo original del diseñador.
-4. **Datos de contacto**: correo (`correo@cica.com.co`), teléfono (`+57 300 000 0000`) y ciudad aparecen en la sección de contacto (`#contacto`) y en el footer — buscar y reemplazar por los reales.
-5. **Redes sociales**: los tres íconos del footer (`Facebook`, `Instagram`, `LinkedIn`) tienen `href="#"` — poner los links reales.
+   > Ojo: hoy esas fotos son **de prueba** y están en `.gitignore` para no subirlas. Cuando pongas
+   > las reales, borra esas líneas del `.gitignore` para que sí se versionen.
+4. **Logo definitivo**: ya está integrado (`assets/img/logo-mark.svg`), pero es una recreación
+   vectorial hecha a partir de las referencias de marca — ver [BRAND.md](BRAND.md#logo) si llega el
+   archivo original del diseñador.
+5. **Textos**: los de las páginas internas (`servicios.html`, `sectores.html`, `contacto.html`) son
+   un primer borrador basado en la información de marca — conviene revisarlos con el cliente.
 
 ## Marca (colores, tipografía, logo)
 
