@@ -61,6 +61,10 @@ y abre la URL que te muestre en la terminal.
 
 Ver [BRAND.md](BRAND.md) — ahí está toda la guía de marca centralizada (paleta, fuentes, uso del logo) para no tener que redescubrirla en cada sesión.
 
+## Publicar el sitio
+
+Ver [DEPLOY.md](DEPLOY.md) — pasos exactos para GitHub Pages o Cloudflare Pages, incluido el dominio propio y los registros DNS.
+
 ## Publicar cambios
 
 ```bash

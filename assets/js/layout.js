@@ -112,6 +112,19 @@ document.querySelectorAll('[data-contacto-href]').forEach(el=>{
   el.href=enlace(el.dataset.contactoHref);
 });
 
+// Si una foto todavía no existe, se quita en vez de dejar el ícono de imagen rota.
+// El CSS ya cubre el hueco: la portada vuelve al degradado de marca y la galería
+// muestra su etiqueta de reemplazo.
+const quitarFoto=img=>{
+  const galeria=img.closest('#galeria');
+  img.remove();
+  if(galeria&&!galeria.querySelector('img.on')) galeria.querySelector('img')?.classList.add('on');
+};
+document.querySelectorAll('img').forEach(img=>{
+  if(img.complete&&!img.naturalWidth) quitarFoto(img);
+  else img.addEventListener('error',()=>quitarFoto(img));
+});
+
 const hamb=document.getElementById('hamb'),menu=document.getElementById('menu');
 hamb.addEventListener('click',()=>{
   const abierto=menu.classList.toggle('abierto');
