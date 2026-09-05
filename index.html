@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CICA — Control Integral de Calidad Alimentaria</title>
+<meta name="description" content="Consultoría especializada en calidad, inocuidad y gestión para restaurantes, hoteles, industrias de alimentos y servicios gastronómicos.">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">
+      <div class="mark"><img src="assets/img/logo-mark.svg" alt="" width="44" height="44"></div>
+      <div class="txt"><strong>CICA</strong><span>Control Integral<br>de Calidad Alimentaria</span></div>
+    </div>
+    <nav class="menu" id="menu">
+      <a href="#" class="on">Inicio</a><a href="#nosotros">Nosotros</a><a href="#servicios">Servicios</a>
+      <a href="#metodologia">Metodología</a><a href="#sectores">Sectores</a><a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn" href="#contacto">Solicitar diagnóstico</a>
+    <button class="hamb" id="hamb" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- TODO FOTO HERO: cuando tengan la foto real (cocina / plato), agregar class="con-foto" aquí abajo
+     y el atributo style='--hero-img:url(assets/img/hero.jpg)'. Ejemplo:
+     <div class="hero con-foto" style="--hero-img:url(assets/img/hero.jpg)">
+     Mientras tanto se muestra el degradado de marca (verde + madera) como placeholder. -->
+<div class="hero">
+  <div class="wrap hero-inner">
+    <h1>Calidad e inocuidad para el crecimiento <span>de su empresa</span></h1>
+    <p class="tagline">Calidad que se ve, confianza que se siente.</p>
+    <p class="lead">Consultoría especializada en calidad, inocuidad y gestión para restaurantes, hoteles, industrias de alimentos y servicios gastronómicos.</p>
+    <div class="badges">
+      <div class="badge"><i><svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></i>Experiencia<br>técnica</div>
+      <div class="badge"><i><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.3"/><path d="M3 19c0-3 3-5 6-5s6 2 6 5"/><path d="M16 14c3 0 5 2 5 5"/></svg></i>Soluciones<br>integrales</div>
+      <div class="badge"><i><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></i>Mejora<br>continua</div>
+    </div>
+    <a class="btn" href="#servicios">Conozca nuestros servicios →</a>
+  </div>
+  <span class="foto-nota">Reemplazar fondo por foto de cocina / plato</span>
+</div>
+
+<div class="franja" id="sectores">
+  <div class="wrap">
+    <h3>Atendemos diferentes sectores</h3>
+    <ul>
+      <li><svg viewBox="0 0 24 24"><path d="M3 17h18M5 17a7 7 0 0114 0M12 6v2"/></svg>Restaurantes</li>
+      <li><svg viewBox="0 0 24 24"><path d="M5 21V4h14v17M9 8h2M13 8h2M9 12h2M13 12h2M9 16h6"/></svg>Hoteles</li>
+      <li><svg viewBox="0 0 24 24"><path d="M3 21V9l6 3V9l6 3V5l6 3v13z"/></svg>Industrias<br>de alimentos</li>
+      <li><svg viewBox="0 0 24 24"><path d="M4 14a8 8 0 0116 0M3 18h18M8 10c0-2 2-2 2-4M14 10c0-2 2-2 2-4"/></svg>Panaderías<br>y reposterías</li>
+      <li><svg viewBox="0 0 24 24"><path d="M4 18h16M6 18a6 6 0 0112 0M12 7v2M9 21h6"/></svg>Servicios<br>de catering</li>
+      <li><svg viewBox="0 0 24 24"><path d="M6 3v8M6 15v6M4 3h4l-1 8H5zM17 3c-2 2-2 6 0 8v10"/></svg>Casinos</li>
+      <li><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-5h6v5"/></svg>Cocinas<br>institucionales</li>
+    </ul>
+  </div>
+</div>
+
+<section id="nosotros">
+  <div class="wrap dos">
+    <!-- TODO FOTO NOSOTROS: reemplazar por <img src="assets/img/nosotros.jpg" alt="Inspección de calidad CICA">
+         dentro de este mismo div.imgbox — el CSS ya lo muestra a pantalla completa (object-fit:cover). -->
+    <div class="imgbox"></div>
+    <div>
+      <p class="eyebrow">Nosotros</p>
+      <h2 class="titulo">Expertos en sistemas de gestión de <em>calidad e inocuidad</em> alimentaria</h2>
+      <p style="color:var(--gris);margin-top:18px">En CICA ayudamos a su organización a cumplir la normativa vigente, optimizar procesos y garantizar la seguridad de sus alimentos, generando confianza para sus clientes.</p>
+      <a class="btn" href="#servicios">Conozca más sobre CICA →</a>
+    </div>
+    <ul class="valores">
+      <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>Ética profesional</li>
+      <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>Responsabilidad</li>
+      <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>Confidencialidad</li>
+      <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>Innovación</li>
+      <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>Excelencia técnica</li>
+      <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>Compromiso</li>
+      <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>Transparencia</li>
+      <li><span class="tick"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>Mejora continua</li>
+    </ul>
+  </div>
+</section>
+
+<section id="servicios" class="servicios">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">Nuestros servicios</p>
+      <h2 class="titulo">Soluciones <em>integrales</em> para su negocio</h2>
+    </div>
+    <div class="grid4">
+      <div class="tarjeta">
+        <svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M9 11h6M9 15h4"/><path d="M15 3v4h4"/></svg>
+        <h3>Sistemas de gestión</h3>
+        <p>Implementación de ISO 9001, ISO 22000, HACCP, BPM, planes de saneamiento, auditorías internas y diseño documental.</p>
+      </div>
+      <div class="tarjeta">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg>
+        <h3>Consultoría</h3>
+        <p>Diagnóstico sanitario, manuales, programas de limpieza, control de plagas, manejo de residuos y estandarización.</p>
+      </div>
+      <div class="tarjeta">
+        <svg viewBox="0 0 24 24"><path d="M12 4L2 9l10 5 10-5z"/><path d="M6 11.5V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/></svg>
+        <h3>Capacitación</h3>
+        <p>Formación práctica para su equipo en manipulación de alimentos, BPM, HACCP, limpieza, desinfección y cultura de calidad.</p>
+      </div>
+      <div class="tarjeta">
+        <svg viewBox="0 0 24 24"><path d="M4 20V4h12l4 4v12z"/><path d="M8 16v-3M12 16v-6M16 16v-4"/></svg>
+        <h3>Auditorías</h3>
+        <p>Evaluación del cumplimiento legal, documental y de procesos para identificar oportunidades de mejora y reducir riesgos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="metodologia">
+  <div class="wrap">
+    <div class="center">
+      <p class="eyebrow">Nuestra metodología</p>
+      <h2 class="titulo">Un proceso claro para resultados reales</h2>
+    </div>
+    <div class="pasos">
+      <div class="paso">
+        <div class="top"><span class="cir"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 19c0-3 3-5 6-5"/><path d="M14 6h7v6h-3l-2 2v-2h-2z"/></svg></span><span><b>01</b><small>Contacto inicial</small></span></div>
+        <p>Reunión con el cliente e identificación de necesidades.</p>
+      </div>
+      <div class="paso">
+        <div class="top"><span class="cir"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></span><span><b>02</b><small>Diagnóstico</small></span></div>
+        <p>Inspección, evaluación documental e identificación de riesgos.</p>
+      </div>
+      <div class="paso">
+        <div class="top"><span class="cir"><svg viewBox="0 0 24 24"><path d="M8 4h8v3H8z"/><path d="M6 6h12v14H6z"/><path d="M9 12h6M9 16h4"/></svg></span><span><b>03</b><small>Plan de acción</small></span></div>
+        <p>Definición de objetivos, actividades, cronograma y presupuesto.</p>
+      </div>
+      <div class="paso">
+        <div class="top"><span class="cir"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.5 5.5l2 2M16.5 16.5l2 2M18.5 5.5l-2 2M7.5 16.5l-2 2"/></svg></span><span><b>04</b><small>Implementación</small></span></div>
+        <p>Aplicación de procedimientos, capacitación, verificación y seguimiento.</p>
+      </div>
+      <div class="paso">
+        <div class="top"><span class="cir"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M8 12l3 3 5-6"/></svg></span><span><b>05</b><small>Mejora continua</small></span></div>
+        <p>Evaluación y aplicación del ciclo PHVA para la mejora sostenida.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TODO DATOS DE CONTACTO: reemplazar correo, teléfono y dirección (aparecen también en el footer) por los reales -->
+<div class="cta" id="contacto">
+  <div class="wrap">
+    <div style="display:flex;align-items:center;gap:22px">
+      <span class="escudo"><svg viewBox="0 0 24 24"><path d="M12 2l8 3v7c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V5z"/><path d="M8.5 12l2.5 2.5L16 9"/></svg></span>
+      <div>
+        <h2>¿Listo para elevar<br>la calidad de su negocio?</h2>
+        <p>Permítanos acompañarlo en el camino hacia la excelencia e inocuidad alimentaria.</p>
+      </div>
+    </div>
+    <div>
+      <a class="btn claro" href="mailto:correo@cica.com.co">Solicitar diagnóstico →</a>
+      <div class="tel"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 005 5L15 13l5 2v4a1 1 0 01-1 1A16 16 0 014 5a1 1 0 011-1z"/></svg>+57 300 000 0000</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap fgrid">
+    <div>
+      <div class="flogo">
+        <div class="mark" style="width:44px;height:44px"><img src="assets/img/logo-mark.svg" alt="" width="44" height="44"></div>
+        <div><strong>CICA</strong><span>Control Integral<br>de Calidad Alimentaria</span></div>
+      </div>
+      <p style="max-width:26ch">Calidad e inocuidad para el crecimiento de su empresa.</p>
+    </div>
+    <div>
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="#servicios"><span class="arr">›</span>Sistemas de gestión</a></li>
+        <li><a href="#servicios"><span class="arr">›</span>Consultoría</a></li>
+        <li><a href="#servicios"><span class="arr">›</span>Capacitación</a></li>
+        <li><a href="#servicios"><span class="arr">›</span>Auditorías</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Sectores</h4>
+      <ul>
+        <li><span class="arr">›</span>Restaurantes</li>
+        <li><span class="arr">›</span>Hoteles</li>
+        <li><span class="arr">›</span>Industrias de alimentos</li>
+        <li><span class="arr">›</span>Catering y casinos</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li>correo@cica.com.co</li>
+        <li>+57 300 000 0000</li>
+        <li>Bogotá, Colombia</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Síganos</h4>
+      <!-- TODO REDES: reemplazar los href="#" por los links reales de cada red -->
+      <div class="redes">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2 0-3 1.3-3 3.2V11H9v3h2v7h3v-7h2.5l.5-3H14V9.6c0-.4.2-.6.6-.6z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 3h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4V7a4 4 0 014-4zm5 5.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5-1.6a.9.9 0 100 1.8.9.9 0 000-1.8z"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M5 4a2 2 0 110 4 2 2 0 010-4zM3 9h4v12H3zM10 9h4v1.7c.6-1 1.7-2 3.5-2 2.6 0 4.5 1.7 4.5 5V21h-4v-6c0-1.5-.6-2.4-1.9-2.4-1.1 0-1.8.8-2.1 1.6V21h-4z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="copy">© 2026 CICA — Control Integral de Calidad Alimentaria. Todos los derechos reservados.</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

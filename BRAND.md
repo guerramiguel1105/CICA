@@ -1,0 +1,38 @@
+# Guía de marca — CICA
+
+Referencia rápida de identidad visual, para que cualquier sesión futura (o cualquier persona) tenga el contexto sin tener que preguntarlo de nuevo. Todo esto ya está implementado en `assets/css/style.css` y `assets/img/`.
+
+## Logo
+
+- **Marca completa** (símbolo + "CICA" + "Control Integral de Calidad Alimentaria"): usar en el header, footer, propuestas e informes.
+- **Símbolo suelto** (`assets/img/logo-mark.svg`): checklist con dos chulos + una hoja verde, dentro de un anillo verde abierto. Se usa como avatar y sello (favicon, redes sociales, marcas de agua).
+- `assets/img/logo-mark.svg` es una **recreación vectorial** hecha a partir de las referencias de marca compartidas (mockups del diseñador), no el archivo original. Si en algún momento llega el .ai/.svg/.png definitivo del diseñador, reemplazar ese archivo manteniendo el mismo nombre — se actualiza automáticamente en todo el sitio (header, footer, favicon).
+- `assets/img/favicon.svg` es una versión simplificada del símbolo, optimizada para verse bien a 16–32px (pestaña del navegador).
+- Tagline oficial: **"Calidad que se ve, confianza que se siente."** — ya está en el hero del sitio (`index.html`).
+
+## Paleta de colores
+
+Paleta actualizada (la vigente — reemplaza cualquier versión anterior). Vive como variables CSS en `assets/css/style.css` dentro de `:root`; cambiar el valor ahí actualiza todo el sitio de una vez.
+
+| Nombre | Variable CSS | Hex | Uso |
+|---|---|---|---|
+| Principal | `--verde` | `#1B5E37` | Botones, textos destacados, marca |
+| Profundo | `--verde-osc` | `#123F25` | Header oscuro (franja de sectores), footer de acento |
+| Madera | `--madera` | `#C9A574` | Acento cálido (fondo del hero) |
+| Madera oscura | `--madera-osc` | `#A67C4E` | Acento cálido, oscuro (fondo del hero, tagline) |
+| Fondo cálido | `--marfil` | `#F3EBDD` | Fondo de secciones claras (servicios) |
+| Texto | `--carbon` | `#2B2620` | Texto principal, fondo del footer |
+| Verde claro (derivado) | `--verde-cl` | `#4CAF6A` | Acento brillante para íconos/subrayados — no viene del brand book, es un tono intermedio creado para dar contraste sobre el verde profundo |
+
+## Tipografía
+
+Cargadas desde Google Fonts (`<link>` en el `<head>` de `index.html`):
+
+- **Barlow Condensed** (600/700) — titulares grandes, wordmark "CICA", números de la metodología. Variable CSS: `--cond`.
+- **Inter** (400/500/600/700) — todo el cuerpo de texto, menú, botones. Variable CSS: `--sans`.
+
+## Stack / herramientas por defecto
+
+- HTML + CSS + JS plano, sin framework ni build step — se abre directo o se sirve con `npx serve .` / `python -m http.server`.
+- Sin dependencias externas más allá de Google Fonts.
+- Estructura de archivos y checklist de contenido pendiente: ver [README.md](README.md).
