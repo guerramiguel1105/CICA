@@ -30,16 +30,14 @@ y abre la URL que te muestre en la terminal.
 
 Busca `TODO` en `index.html` — cada uno indica exactamente qué reemplazar:
 
-1. **Foto del hero** (fondo grande de la portada, ahora es un degradado verde/madera de marca).
-   Coloca la foto en `assets/img/hero.jpg` y en el `<div class="hero">` agrega:
-   ```html
-   <div class="hero con-foto" style="--hero-img:url(assets/img/hero.jpg)">
-   ```
-2. **Foto de "Nosotros"** (recuadro junto al texto de valores, ahora es un degradado verde).
-   Coloca la foto en `assets/img/nosotros.jpg` y dentro de `<div class="imgbox">` agrega:
-   ```html
-   <img src="assets/img/nosotros.jpg" alt="Inspección de calidad CICA">
-   ```
+1. **Foto del hero** (fondo grande de la portada). Ya está conectada: reemplaza el archivo
+   `assets/img/hero.jpg` por la foto real y listo. Si borras la línea del `<img class="hero-foto">`
+   en `index.html`, el hero vuelve solo al degradado verde/madera de marca.
+2. **Foto de "Nosotros"** (recuadro junto a la lista de valores, proporción 4:3). Igual: reemplaza
+   `assets/img/nosotros.jpg` por la foto real.
+
+   > Ojo: hoy esos dos archivos son **fotos de prueba** y están en `.gitignore` para no subirlas.
+   > Cuando pongas las reales, borra esas dos líneas del `.gitignore` para que sí se versionen.
 3. **Logo definitivo**: ya está integrado (`assets/img/logo-mark.svg`), pero es una recreación vectorial hecha a partir de las referencias de marca — ver [BRAND.md](BRAND.md#logo) si llega el archivo original del diseñador.
 4. **Datos de contacto**: correo (`correo@cica.com.co`), teléfono (`+57 300 000 0000`) y ciudad aparecen en la sección de contacto (`#contacto`) y en el footer — buscar y reemplazar por los reales.
 5. **Redes sociales**: los tres íconos del footer (`Facebook`, `Instagram`, `LinkedIn`) tienen `href="#"` — poner los links reales.
